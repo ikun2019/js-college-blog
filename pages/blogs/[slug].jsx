@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 
 const Post = ({ post }) => {
 	return (
-		<section>
+		<section className="container">
 			<h2>{post.metadata.title}</h2>
 			<div>
 				<ReactMarkdown children={post.markdown.parent}></ReactMarkdown>
