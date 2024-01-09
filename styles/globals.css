@@ -26,7 +26,3 @@ body {
   background: #151515;
   ;
 }
-
-.header-link-border {
-  @apply border-b border-orange-700
-}

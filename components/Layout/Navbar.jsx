@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import styles from './Navbar.module.css';
 
 const Navbar = () => {
 	return (
@@ -10,12 +11,18 @@ const Navbar = () => {
 				<div>
 					<ul className="flex items-center text-sm">
 						<li className=" hover:text-blue-500 transition-all duration-300">
-							<Link href="/" className="block px-4 py-2 text-gray-100 header-link-border">
+							<Link
+								href="/"
+								className={`${styles.header_link_border} block px-4 py-2 text-gray-100`}
+							>
 								Home
 							</Link>
 						</li>
 						<li className="hover:text-blue-500 transition-all duration-300">
-							<Link href="/blogs" className="block px-4 py-2 text-gray-100">
+							<Link
+								href="/blogs"
+								className={`${styles.header_link_border} block px-4 py-2 text-gray-100`}
+							>
 								Blogs
 							</Link>
 						</li>
